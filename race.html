@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Amalthea: Race</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header" class="alt">
+					
+				<nav id="nav">
+					<ul style="margin: 0 0 0 0; border-radius: 16px;">
+						<li class="submenu">
+							<a href="#"></a>
+							<ul>
+								<li><a href="index.html" >Home</a></li>
+								<li><a href="shop.html" >Shop</a></li>
+							</ul>
+						</li>
+						<li>
+							<h1 id="logo">
+								<a href="index.html">
+									<img id="logo-image" src="./images/ai-mountain-small.png"/>
+									<div>
+										Amalthea <span> by ARISTURTLE</span>
+									</div>
+								</a>
+							</h1>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Banner -->
+			<section id="banner-shop" style="background-image: url('./images/crete-race-highway.jpg');">
+				<div class="inner">
+
+					<header>
+						<h2>Race</h2>
+					</header>
+					<p>
+						Book your <strong>racing</strong>
+						<br />
+						experience <strong>today</strong>
+					<br />
+				</div>
+			</section>
+
+
+			<!-- Main -->
+				<article id="main" style="padding: 40px 0;">
+
+					<header class="special container">
+						<h2>
+							Choose among our different <strong>racing</strong>
+							<br />
+							routes to explore Crete at your own <strong>pace</strong>
+						</h2>
+					</header>
+
+					<!-- Racing Experiences -->
+					<section class="wrapper style3 container special">
+
+						<div class="row">
+							<div class="col-6 col-12-narrower">
+
+								<section>
+									<a id="racing-route-1" class="image featured racing-route scrolly" href="#form" tabindex="0" onclick="selectRacingRoute(1)"><img src="images/pic01.jpg" alt="" /></a>
+									<header>
+										<h3>Racing Experience #1</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+								</section>
+
+							</div>
+							<div class="col-6 col-12-narrower">
+
+								<section>
+									<a id="racing-route-2" class="image featured racing-route scrolly" href="#form" tabindex="0" onclick="selectRacingRoute(2)"><img src="images/pic02.jpg" alt="" /></a>
+									<header>
+										<h3>Racing Experience #2</h3>
+									</header>
+									<p>Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+								</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6 col-12-narrower">
+
+								<section>
+									<a id="racing-route-3" class="image featured racing-route scrolly" href="#form" tabindex="0" onclick="selectRacingRoute(3)"><img src="images/pic03.jpg" alt="" /></a>
+									<header>
+										<h3>Racing Experience #3</h3>
+									</header>
+									<p> Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+								</section>
+
+							</div>
+							<div class="col-6 col-12-narrower">
+
+								<section>
+									<a id="racing-route-4" class="image featured racing-route scrolly" href="#form" tabindex="0" onclick="selectRacingRoute(4)"><img src="images/pic04.jpg" alt="" /></a>
+									<header>
+										<h3>Racing Experience #4</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+								</section>
+
+							</div>
+						</div>
+					</section>
+
+					<section class="wrapper style4 special container medium" id="form">
+
+						<!-- Content -->
+							<div class="content">
+								<form>
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobile">
+											<input type="text" name="name" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-mobile">
+											<input type="text" name="email" placeholder="Email" />
+										</div>
+										<div class="col-12" style="display: flex;">
+											<input type="text" placeholder="Selected Racing Route:" readonly="true" style="border: none; width: 50%; display: inline-block;"/>
+											<input type="text" id="displayedRoute" readonly="true" style="border: none; width: 50%; display: inline-block; font: bold;"/>
+										</div>
+										<div class="col-12">
+											<div class="calendar">
+												<div class="month"></div>
+												<div class="days"></div>
+											</div>
+										</div>
+										<div class="col-12">
+											<ul class="buttons">
+												<li><input class="special" type="button" value="Book your place NOW" onclick="finaliseBooking()"/></li>
+												<li><p class="booking-confirmation" id="booking-confirmation" style="display: none;">
+													Thank you for choosing Amalthea. An email has been sent to confirm your trip.
+												</p></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
+					</section>
+
+					<section>
+						
+					</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- Calendar code-->
+			<script>
+				//*********************************************************
+				// GLOBAL VARIABLES
+				var greyDays = []
+				var start_day = null;
+				var end_day = null;
+				const dayNames = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+				const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 
+				'October', 'November', 'December'];
+				const today = new Date();
+				var currentYear = today.getFullYear();
+				var currentMonthNumber = today.getMonth()
+
+				//*********************************************************
+				// HTML ELEMENTS
+				const calendar = document.querySelector(".calendar");
+				const monthElement = calendar.querySelector(".month");
+				const daysElement = calendar.querySelector(".days");
+				// buttons to change month
+				const leftMonthButton = document.createElement("a");
+				leftMonthButton.classList.add("left-month-button");
+				leftMonthButton.innerText = "<";
+				leftMonthButton.setAttribute("onclick",'goPrevMonth()')
+				const rightMonthButton = document.createElement("a");
+				rightMonthButton.classList.add("right-month-button");
+				rightMonthButton.innerText = ">";
+				rightMonthButton.setAttribute("onclick",'goNextMonth()')
+
+				function renderCalendar() {
+					// clear html
+					daysElement.innerHTML = "";
+					monthElement.innerHTML = "";
+					var currentMonth = monthNames[currentMonthNumber];
+					const monthElementTextNode = document.createTextNode(`${currentMonth} ${currentYear}`);
+					
+					monthElement.appendChild(leftMonthButton);
+					monthElement.appendChild(monthElementTextNode);
+					monthElement.appendChild(rightMonthButton);
+
+					// Add days of the week names under month
+					for (let i = 0; i < 7; i++) {
+						const dayNameCell = document.createElement("a");
+						dayNameCell.classList.add("day", "disabled");
+						dayNameCell.textContent = dayNames[i];
+						daysElement.appendChild(dayNameCell);
+					}
+
+					const daysInMonth = new Date(currentYear, currentMonthNumber+ 1, 0).getDate();
+					var firstDayOfMonth = new Date(currentYear, currentMonthNumber + 1, 0).getDay();
+					console.log(currentYear + " " + currentMonth + " " + currentMonthNumber + " - daysInMonth:" + daysInMonth + " firstDayNumber:" + firstDayOfMonth)
+					// Add empty cells for previous month's days
+					if (firstDayOfMonth == 0)  {// sunday
+						firstDayOfMonth = 7;
+					}
+					for (let i = 0; i < firstDayOfMonth-1; i++) {
+						const emptyCell = document.createElement("a");
+						emptyCell.classList.add("day", "disabled");
+						emptyCell.textContent = "";
+						daysElement.appendChild(emptyCell);
+					}
+
+					let start_day_number, end_day_number = 0;
+					if (start_day !== null) {
+						start_day_number = parseInt(start_day.innerHTML);
+					}
+					if (end_day !== null) {
+						end_day_number = parseInt(end_day.innerHTML);
+					}
+					// Add days of the current month
+					for (let i = 1; i <= daysInMonth; i++) {
+						const dayElement = document.createElement("a");
+						dayElement.classList.add("day");
+						if (start_day_number == i || end_day_number == i) {
+							dayElement.classList.add("selected");
+						}
+						dayElement.textContent = i;
+						dayElement.setAttribute("onclick",'handleDayClick(' + i + ')')
+						dayElement.id = 'day' + i;
+						daysElement.appendChild(dayElement);
+					}
+
+					// highlight the period between the chosen days
+					greyDays.forEach(dayNumber => {
+						let dayElement = document.getElementById('day' + dayNumber);
+						dayElement.classList.add('grayed-out');
+					})
+				}
+
+				function clearSelection() {
+					start_day = null;
+					end_day = null;
+					greyDays = [];
+				}
+
+				function highlightSelectedPeriod() {
+					start_day_number = parseInt(start_day.innerHTML);
+					end_day_number = parseInt(end_day.innerHTML);
+					for (let i = start_day_number + 1; i < end_day_number; i++) {
+						// save the number of the day in the list
+						greyDays.push(i);
+					}
+				}
+
+				function handleDayClick(day) {
+					let dayClciked = document.getElementById('day' + day);
+					if (start_day === null) {
+						// First time clicking the calendar
+						start_day = dayClciked;
+					} else if (start_day && !end_day && parseInt(dayClciked.innerHTML) > parseInt(start_day.innerHTML)) {
+						// Extend the selection
+						end_day = dayClciked;
+						highlightSelectedPeriod()
+					} else {
+						// set a new start day
+						clearSelection()
+						start_day = dayClciked;
+					}
+					renderCalendar();
+				}
+
+				function goPrevMonth() {
+					if (currentMonthNumber == 0) {
+						currentMonthNumber = 11;
+						currentYear -= 1;
+					} else {
+						currentMonthNumber -= 1;
+					}
+					clearSelection();
+					renderCalendar();
+				}
+
+				function goNextMonth() {
+					if (currentMonthNumber == 11) {
+						currentMonthNumber = 0;
+						currentYear += 1;
+					} else {
+						currentMonthNumber += 1;
+					}
+					clearSelection();
+					renderCalendar();
+				}
+
+
+				document.addEventListener("DOMContentLoaded", function() {
+					renderCalendar();
+				});
+			</script>
+			<!-- Racing route selection code -->
+			<script>
+				function selectRacingRoute(routeNo) {
+					displayElement = document.getElementById("displayedRoute");
+					displayElement.setAttribute("value", "Racing Route #" + routeNo);
+				}
+
+				function finaliseBooking() {
+					bookingConfirmationElement = document.getElementById("booking-confirmation");
+					bookingConfirmationElement.setAttribute("style", "display: block; color: #3fb1a3; margin: 1em 0 0 0;")
+					setTimeout(function () {
+									$('#booking-confirmation').fadeOut('fast');
+								}, 2000);
+				}
+			</script>
+
+	</body>
+</html>
